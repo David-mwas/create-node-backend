@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "CLI tool to scaffold Node.js backend projects with Express, Fastify, or Hono + DB setup (MongoDB, PostgreSQL, MySQL)",
   "bin": {
-    "create-node-backend": "./bin/index.js"
+    "create-node-backend": "./dist/index.js"
   },
   "type": "module",
   "scripts": {
+    "dev": "node ./bin/index.js",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -27,5 +29,8 @@
     "execa": "^9.6.0",
     "fs-extra": "^11.3.0",
     "inquirer": "^12.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
   }
 }
