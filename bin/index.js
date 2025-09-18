@@ -320,14 +320,16 @@ const main = async () => {
     version: "1.0.0",
     main: `src/index.${ext}`,
     type: useTS ? undefined : "module",
-    scripts: {
-      dev: useTS
-        ? "ts-node-dev --respawn --transpile-only src/index.ts"
-        : "node --watch src/index.js",
-      start: useTS
-        ? "ts-node-dev --respawn --transpile-only src/index.ts"
-        : "node src/index.js",
-    },
+    scripts: useTS
+      ? {
+          dev: "ts-node-dev --respawn --transpile-only src/index.ts",
+          build: "tsc",
+          start: "node dist/index.js",
+        }
+      : {
+          dev: "node --watch src/index.js",
+          start: "node src/index.js",
+        },
     dependencies: {},
     devDependencies: {},
   };
