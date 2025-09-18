@@ -20,7 +20,7 @@
     "postgres",
     "mysql"
   ],
-  "author": "David Mwas <dmwas704@gmail.com>",
+  "author": "David Mwas dmwas704@gmail.com",
   "license": "MIT",
   "dependencies": {
     "chalk": "^5.4.1",
