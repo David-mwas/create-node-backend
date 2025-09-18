@@ -1,18 +1,27 @@
 {
   "name": "create-node-backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "CLI tool to scaffold Node.js backend projects with Express, Fastify, or Hono + DB setup (MongoDB, PostgreSQL, MySQL)",
   "bin": {
-  "create-node-backend": "bin/index.js"
-},
-"type": "module",
+    "create-node-backend": "./bin/index.js"
+  },
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "cli",
+    "node",
+    "backend",
+    "express",
+    "fastify",
+    "hono",
+    "mongodb",
+    "postgres",
+    "mysql"
+  ],
+  "author": "David Mwas <dmwas704@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^5.4.1",
     "execa": "^9.6.0",
