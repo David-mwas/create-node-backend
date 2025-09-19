@@ -9,7 +9,10 @@
   "scripts": {
     "dev": "nodemon --watch ./bin --exec node ./bin/index.js",
     "build": "echo 'No build step needed for CLI (JS only)'",
-    "test": "echo \"No tests yet\" && exit 0"
+    "test": "echo \"No tests yet\" && exit 0",
+    "release:patch": "npm version patch && git push origin main --tags",
+    "release:minor": "npm version minor && git push origin main --tags",
+    "release:major": "npm version major && git push origin main --tags"
   },
   "keywords": [
     "cli",
