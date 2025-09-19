@@ -16,6 +16,13 @@ Scaffold a Node.js backend project in seconds. Supports **Express**, **Fastify**
 
 ---
 
+## ⚡ Compatibility
+
+⚠️ Works on **Linux**, **macOS**, and **Windows**.  
+You only need **Node.js ≥16** installed.
+
+> 🗄️ Databases (**MongoDB**, **PostgreSQL**, **MySQL**) must be installed separately if you choose them during setup.
+
 ## 📦 Installation
 
 ```bash
