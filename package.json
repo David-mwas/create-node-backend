@@ -6,11 +6,12 @@
     "create-node-backend": "./bin/index.js"
   },
   "type": "module",
-  "scripts": {
-    "build":"node ./bin/index.js",
-    "dev": "nodemon --watch ./bin --exec node ./bin/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+ "scripts": {
+  "dev": "nodemon --watch ./bin --exec node ./bin/index.js",
+  "build": "echo 'No build step needed for CLI (JS only)'",
+  "test": "echo \"No tests yet\" && exit 0"
+}
+,
   "keywords": [
     "cli",
     "node",
