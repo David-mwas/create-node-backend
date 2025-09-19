@@ -51,12 +51,15 @@
 #         env:
 #           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-name: Publish to npm & GitHub Release
+name: Publish to npm
 
 on:
   push:
     tags:
       - "v*.*.*" # e.g. v1.0.0
+
+permissions:
+  contents: write # 👈 required for creating releases
 
 jobs:
   build:
@@ -96,19 +99,7 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Check if version already exists
-        id: check
-        run: |
-          VERSION=$(node -p "require('./package.json').version")
-          NAME=$(node -p "require('./package.json').name")
-          if npm view $NAME@$VERSION > /dev/null 2>&1; then
-            echo "exists=true" >> $GITHUB_OUTPUT
-          else
-            echo "exists=false" >> $GITHUB_OUTPUT
-          fi
-
       - name: Publish to npm
-        if: steps.check.outputs.exists == 'false'
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
