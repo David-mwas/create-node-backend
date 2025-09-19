@@ -1,9 +1,9 @@
 {
-  "name": "scaffold-node-api",
+  "name": "nodejs-api-init",
   "version": "1.0.0",
   "description": "CLI tool to scaffold Node.js backend projects with Express, Fastify, or Hono + DB setup (MongoDB, PostgreSQL, MySQL)",
   "bin": {
-    "scaffold-node-api": "./bin/index.js"
+    "nodejs-api-init": "./bin/index.js"
   },
   "type": "module",
   "scripts": {

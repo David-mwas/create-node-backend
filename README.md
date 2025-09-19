@@ -1,4 +1,4 @@
-# Create Node Backend CLI(scaffold-node-api) 🛠
+# Create Node Backend CLI(nodejs-api-init) 🛠
 
 Scaffold a Node.js backend project in seconds. Supports **Express**, **Fastify**, or **Hono**, with optional databases (**MongoDB, PostgreSQL, MySQL**). TypeScript-first with JS fallback.
 
@@ -19,7 +19,7 @@ Scaffold a Node.js backend project in seconds. Supports **Express**, **Fastify**
 ## 📦 Installation
 
 ```bash
-npm install -g scaffold-node-api
+npm install -g nodejs-api-init
 ```
 
 ## 🚀 Usage
@@ -27,7 +27,7 @@ npm install -g scaffold-node-api
 ### Create a new backend:
 
 ```bash
-npm scaffold-node-api
+npm nodejs-api-init
 ```
 
 ### You’ll be prompted for:
@@ -72,8 +72,8 @@ my-backend-app/
 ### Clone and link locally:
 
 ```bash
-git clone https://github.com/david-mwas/scaffold-node-api.git
-cd scaffold-node-api
+git clone https://github.com/david-mwas/nodejs-api-init.git
+cd nodejs-api-init
 npm install
 npm link
 ```
@@ -81,7 +81,7 @@ npm link
 ### Run:
 
 ```bash
-npm scaffold-node-api
+npm nodejs-api-init
 ```
 
 📜 License
