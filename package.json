@@ -1,17 +1,16 @@
 {
-  "name": "create-node-backend",
+  "name": "create-node-api",
   "version": "1.0.0",
   "description": "CLI tool to scaffold Node.js backend projects with Express, Fastify, or Hono + DB setup (MongoDB, PostgreSQL, MySQL)",
   "bin": {
-    "create-node-backend": "./bin/index.js"
+    "create-node-api": "./bin/index.js"
   },
   "type": "module",
- "scripts": {
-  "dev": "nodemon --watch ./bin --exec node ./bin/index.js",
-  "build": "echo 'No build step needed for CLI (JS only)'",
-  "test": "echo \"No tests yet\" && exit 0"
-}
-,
+  "scripts": {
+    "dev": "nodemon --watch ./bin --exec node ./bin/index.js",
+    "build": "echo 'No build step needed for CLI (JS only)'",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
   "keywords": [
     "cli",
     "node",
