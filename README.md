@@ -4,6 +4,10 @@ Scaffold a Node.js backend project in seconds. Supports **Express**, **Fastify**
 
 ---
 
+```bash
+npm install -g nodejs-api-init 
+```
+
 ## ✨ Features
 
 - Choose framework: Express / Fastify / Hono
@@ -16,13 +20,6 @@ Scaffold a Node.js backend project in seconds. Supports **Express**, **Fastify**
 
 ---
 
-## ⚡ Compatibility
-
-⚠️ Works on **Linux**, **macOS**, and **Windows**.  
-You only need **Node.js ≥16** installed.
-
-> 🗄️ Databases (**MongoDB**, **PostgreSQL**, **MySQL**) must be installed separately if you choose them during setup.
-
 ## 📦 Installation
 
 ```bash
@@ -34,7 +31,7 @@ npm install -g nodejs-api-init
 ### Create a new backend:
 
 ```bash
-npm nodejs-api-init
+npx nodejs-api-init
 ```
 
 ### You’ll be prompted for:
@@ -88,8 +85,15 @@ npm link
 ### Run:
 
 ```bash
-npm nodejs-api-init
+npx nodejs-api-init
 ```
+
+## ⚡ Compatibility
+
+⚠️ Works on **Linux**, **macOS**, and **Windows**.  
+You only need **Node.js ≥16** installed.
+
+> 🗄️ Databases (**MongoDB**, **PostgreSQL**, **MySQL**) must be installed separately if you choose them during setup.
 
 📜 License
 
